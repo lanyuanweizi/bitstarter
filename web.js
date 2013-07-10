@@ -3,9 +3,9 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('fs.writeFile('index.html', 'Hello Node', function (err) {
+  response.send(fs.writeFile('index.html', 'Hello Node', function (err) {
   if (err) throw err;
-  console.log('It\'s saved!');
+  console.log('It\'s saved!);
 });');
 });
 
